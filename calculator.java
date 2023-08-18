@@ -5,6 +5,9 @@ public class calculator {
     static int sub(int a, int b) {
         return a - b;
     }
+    static int multi(int a, int b) {
+        return a * b;
+    }
   
 
     public static void main(String[] args) {

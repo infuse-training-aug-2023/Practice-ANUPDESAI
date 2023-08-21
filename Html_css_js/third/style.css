@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  overflow:scroll;
+  grid-template-columns: 16% auto;
+  background-color: #AFAFAF;
+}
+
+aside {
+  border-right: 1px solid rgb(205, 205, 205);
+  /* width: vw; */
+}
+
+.um-logo {
+  padding: 16px 30px;
+  border-bottom: 1px solid rgb(205, 205, 205);
+  width: 100%;
+}
+
+.um-user-email {
+  font-size:0.7vw;
+  font-weight:bold;
+  color: #c5c5c5;
+  font-family:Arial, Helvetica, sans-serif;
+  line-height: 15px;
+}
+.um-user{
+  display: flex;
+  /* background-color: #119EDA; */
+  padding: 20px 7px;
+  /* flex-wrap: wrap; */
+}
+.um-user-name{
+font-size: 0.8vw;
+font-weight: bold;
+color: #1289bc;
+transition: font-size 0.3s; 
+}
+.um-name-email{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  /* font-size: 30px!important; */
+  /* flex-wrap: wrap; */
+}
+
+aside{
+  background-color: #fff;
+}
+
+.um-user img {
+  width: 2vw;
+  height: 2vw;
+}
+
+.test-designer {
+  width: 50%;
+  height: 200px;
+}
+.um-navitems__main,.um-navitems__secondary{
+  /* background-color: brown; */
+  /* height: auto; */
+  padding: 0;
+}
+li{
+  height: 5vh;
+  /* border-color: black;
+  border-width: 1px;
+  border-style: dashed; */
+  list-style-type:none;
+  /* padding: 20px; */
+ display: flex;
+ align-items: center;
+ /* background-color: aquamarine; */
+ justify-items: center;
+ color:#1289bc;
+}
+li .bi{
+font-size: 1.2vw;
+transition: font-size 0.3s; 
+color:#119EDA;
+}
+li span{
+  font-size: 1vw;
+  transition: font-size 0.3s; 
+  margin-left: 1em;
+}
+.test{
+  background-color: #f1f1f1;
+  margin: 1vi;
+  /* min-height:76vh; */
+  overflow: hidden;
+}
+.um-top_bar{
+  display: flex;
+  align-items: center;
+  background-color: #119EDA;
+  padding: 12px 5px;
+  justify-content: space-between;
+  height: 1vh;
+  width: 100%;
+}
+#top-bar{
+  display: flex;
+  color: #fff;
+}
+.um-second-bar{
+  background-color: #5ec6f3;
+  padding: 0.1em ;
+  color: #fff;
+}
+.form-properties{
+  display: flex;
+  background-color: #fff;
+  justify-content: space-between;
+}
+.um-third-bar{
+  padding: 0.3em 5px;
+  margin-bottom: 3px;
+}
+.um-third-bar label{
+  color: #5ec6f3;
+
+}
+select{
+  border-style: none;
+  /* display: flex; */
+
+  flex-direction: column;
+  padding: 0 30px 0 0;
+  color:#ccc;
+
+}
+.description{
+  display: flex;
+  color:#119EDA;
+  margin: 3px;
+
+
+}
+.um-forth-bar{
+  display: flex;
+  color: #119EDA;
+  align-items: baseline;
+  width: 25vh;
+  justify-content: space-around;
+}
+.test-main{
+  display: flex;
+  flex-shrink: inherit;
+  
+}
+.test-flowchart {
+  border-style: solid;
+  border-color: #119EDA;
+  /* width: 100000vw; */
+  border-left: transparent;
+  border-bottom: transparent;
+  margin-right: 8PX;
+  flex: 34vw;
+  flex-grow:3;
+}
+.test-flowchart div:first-child{
+  background-color: #119EDA;
+  /* width: 100%; */
+}
+.options{
+  display: flex;
+
+  /* background-color:#AFAFAF; */
+  padding: 3px 8px;
+  justify-content: flex-start;
+  gap: 10px;
+  background-color: #fff;
+  
+}
+.test-data{
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-between;
+
+  /* width:64vw; */
+  height: 94vh;
+  /* flex:2vw; */
+  /* flex-grow:3; */
+  /* flex-shrink: 2; */
+  /* overflow: hidden; */
+}
+.test-variables{
+  flex-grow:1;
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-color: #119EDA;
+  height: 38vh ; 
+  /* width: 29vw; */
+  border-right:transparent;
+  border-bottom: transparent;
+  background-color: #fff;
+  color: #fff;
+}
+
+.test-variables div:first-child{
+  background-color: #119EDA;
+}
+
+.test-parameters{
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-color: #119EDA;
+  border-top: transparent;
+  border-bottom: transparent;
+  border-right:transparent;
+  height: 56vh;
+  background-color: #fff;
+  color: #fff;
+}
+.test-parameters div:first-child{
+  background-color: #119EDA;
+}
+.table-header{
+  display: flex;
+  color: #119EDA;
+  background-color: #fff;
+  justify-content: flex-start;
+  padding-left: 1.5em;
+  padding-right: 2em;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: #ccc;
+  border-style: solid;
+  font-weight: bold;
+
+  gap: 100px;
+}
+.um-navitems__secondary li:hover,.um-navitems__main li:hover{
+  background-color:#5ec6f3;
+  color:#1289bc;
+  font-weight: 900;
+}
+
+#activate{
+  background-color:#1289bc;
+  height: 100%;
+  width: 0.5vw;
+  margin-right: 15px;
+}
+
+li div{
+  height: 100%;
+  width: 10px;
+  margin-right: 15px;
+}

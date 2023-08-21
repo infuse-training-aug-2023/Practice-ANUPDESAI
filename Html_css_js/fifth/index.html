@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>OMDB Movies</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/d5635d350d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+    <div class="header">
+      <div
+        class="header-container"
+        style="display: flex; justify-content: center"
+      >
+        <div>
+          <h1>Movies</h1>
+        </div>
+      </div>
+
+      <div class="search-box">
+
+        <input
+          type="text"
+          placeholder="Type movie name here..."
+          class="search-bar"
+          id="Input"
+        />
+
+        <button style="margin: 10px;cursor:pointer" type="submit" id="search-button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="fav-container"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

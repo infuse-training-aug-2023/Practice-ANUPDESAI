@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>useMango&trade;</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <img
+          class="um-logo"
+          src="https://usemangolive.wpenginepowered.com/wp-content/uploads/2021/12/new-usemango-logo.png"
+          alt="useMango logo" height="60px" style="padding: 12px 45px;"/>
+        <div class="um-user">
+          <img src="https://freesvg.org/img/abstract-user-flat-4.png" alt="profile picture"/>
+          <div class="um-name-email">
+            <!-- CHANGES ALLOWED -->
+            <span class="um-user-name">Rochelle Martins</span>
+            <span class="um-user-email">rochelle.martins@infuse.it</span>
+            <!-- ************** -->
+          </div>
+        </div>
+        <nav>
+          
+          <ul class="um-navitems__main">
+            <li>
+              <div class=".active"></div>
+              <i class="bi bi-kanban"></i>
+              <span>Projects</span>
+            </li>
+            <li>
+              <div class=".active"></div>
+              <i class="bi bi-stack"></i>
+              <span>Data</span>
+            </li>
+            <li>
+              <div class=".active"></div>
+              <i class="bi bi-box-seam"></i>
+              <span>Components</span>
+            </li>
+            <li>
+              <div class=".active"></div>
+              <i class="bi bi-cup-straw"></i>
+              <span>Tests</span>
+            </li>
+            <li>
+              <div class=".active" id="activate"></div>
+              
+              <i class="bi bi-pencil-square"></i>
+              <span>Designer</span>
+            </li>
+          </ul>
+          <!-- <span class="line"></span> -->
+          <hr size="4" color="#ccc">
+          
+          <ul class="um-navitems__secondary">
+            <li>
+              <div class=".active"></div>
+              <i class="bi bi-gear"></i>
+              <span>Settings</span>
+            </li>
+            <li>
+              <div class=".active"></div>
+              <i class="bi bi-trash"></i>
+              <span>Recycle Bin</span>
+            </li>
+          </ul>
+          <hr>
+        </nav>
+      </aside>
+      <main>
+        <div class="test">
+          <div class="test-data">
+
+            <div id="top-bar">
+              <span style="background-color: black; color: aliceblue; font-size: small;padding: 4px;">Test</span>
+              <div class="um-top_bar">      
+                <div>
+                  <span class="um-test-name">Unnamed Test</span>
+                  <i class="bi bi-pencil-square"></i>
+                </div>
+                <i class="bi bi-x"></i>
+              </div> 
+            </div>
+          
+            <div class="test-properties">
+              <div class="um-second-bar">Properties</div>
+              <form class="form-properties" action="">
+                <div class="details">
+                  <div class="um-third-bar">
+                    <label for="status">Status:</label>
+                    <select name="status" id="status">
+                      <option value="Design">Design</option>
+                    </select>
+                    
+                    <label for="assigned">Assigned To:</label>
+                    <select name="assigned" id="assigned">
+                      <option value="Nobody"> Nobody</option>
+                    </select>
+                  </div>
+                 
+                  <div class="um-forth-bar">
+                    <label for="tags">Tags: </label>
+                    <i style="font-size: 14px;" class="bi bi-plus-circle"></i>
+                    <p value="Tags">Add Tag</p>
+                  </div>
+                
+                </div>
+
+                <div class="description">
+                  <label style="margin-right: 5px;" for="description">Description:</label>
+                  <textarea style="resize: none;border-style: none; background-color: #ccc;" disabled name="" id="" cols="60" rows="7" ></textarea>
+                </div>
+              </form>
+            </div>
+
+            <div class="test-main">
+              <div class="test-flowchart">
+                <div style="color: #fff;">Flowchart</div>
+                <div class="options">
+                  <i class="bi bi-list-nested"></i>
+                  <hr>
+                  <i class="bi bi-play-fill"></i>
+                  <i class="bi bi-toggle-on"></i>
+                  <hr>
+                  <i class="bi bi-box-seam-fill"></i>
+                  <i class="bi bi-lightning"></i>
+                  <i class="bi bi-arrows-angle-expand"></i>
+                  <hr>
+                  <i class="bi bi-scissors"></i>
+                  <i class="bi bi-back"></i>
+                  <i class="bi bi-clipboard"></i>
+                  <hr>
+                  <i class="bi bi-trash"></i>
+                  <hr>
+                </div>
+                <div class="test-designer"></div>
+              </div>
+              <div class="test-data">
+                <div class="test-variables">
+                  <div>Variables</div>
+                  <i style="display: flex;justify-content: flex-end;color: rgb(5, 115, 200);font-size: 25px;background-color: #fff;" class="bi bi-plus"></i>
+                  <div class="table-header">
+                    <span>Name</span>
+                    <span>Value</span>
+                  </div>
+                 
+                
+                    <!-- <span style="width: 100%;"></span> -->
+                  
+                </div>
+                <div class="test-parameters">
+                  <div>Parameters</div>
+                  <i class="bi bi-plus" style="display: flex;justify-content: flex-end;color: rgb(5, 115, 200);font-size: 25px;background-color: #fff;"></i>
+                  <div class="table-header">
+                    <span>Name</span>
+                    <span>Value</span>
+                    <span>Description</span>
+                 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

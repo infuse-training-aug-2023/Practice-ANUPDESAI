@@ -1,0 +1,31 @@
+body {
+  background-image: linear-gradient(
+    to left top,
+    rgba(31, 31, 31, 1),
+    rgb(36, 35, 35)
+  );
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 350px;
+  border: 0.3vw solid seashell;
+  background: linear-gradient(to bottom left, rgb(3, 3, 3), rgb(38, 37, 37))
+    black;
+  box-shadow: 1px 2px 2px 2px rgb(53, 52, 52);
+  border-radius: 2vmin;
+  margin: 4px;
+  transform: rotate(8deg);
+  text-shadow: 2px 2px 1px rgb(36, 35, 35);
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}

@@ -5,7 +5,7 @@ require_relative 'solution6'
 class TestBase64Encode < Test::Unit::TestCase
   def setup
     @txt_file = File.read("content.txt")
-    @your_name = "jason.txt"
+    @your_name = "anup.txt"
     @string = "the string that will be base encoded"
     @encoded_string = Base64.encode64(@string).chomp
     @new_content = @txt_file.gsub(@string, @encoded_string)

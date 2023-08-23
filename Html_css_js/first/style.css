@@ -29,3 +29,8 @@ body {
   place-items: center;
   height: 100vh;
 }
+
+.card::after{
+  content: url("./assets/new-usemango-logo.png");
+  display: block;
+}

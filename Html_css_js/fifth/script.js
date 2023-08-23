@@ -65,14 +65,14 @@ async function singleMovie() {
 
     document.querySelector('.movie-container').innerHTML = output
 } catch (error) {
-        
+        console.log(error)
 }
 
 }
-
 async function displayMovieList(movies) {
     let output = '';
     let img = '';
+    let id = i.imdbID;
     
     movies?.map((i)=> {
 
@@ -82,7 +82,7 @@ async function displayMovieList(movies) {
         else {
             img = 'img/blank-poster.webp';
         }
-        let id = i.imdbID;
+    
 
         //Appending the output through string interpolition
         output += `

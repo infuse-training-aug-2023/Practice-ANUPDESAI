@@ -34,6 +34,7 @@
           type="text"
           placeholder="Type movie name here..."
           class="search-bar"
+          value="spiderman"
           id="Input"
         />
 
@@ -47,6 +48,24 @@
     <div class="main">
       <div class="fav-container"></div>
     </div>
+
+    <div class="movie-container">
+    </div>
+  
+    <div style="display:flex;justify-content:center;background-color:#e1e1e1;";">
+      <nav aria-label="...">
+        <ul class="pagination">
+          <li class="page-item disabled" id="decrease">
+            <span class="page-link">Previous</span>
+          </li>
+          <li class="page-item" id="increase">
+            <span class="page-link">Next</span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+
     <script src="./script.js"></script>
   </body>
 </html>

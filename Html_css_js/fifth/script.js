@@ -69,12 +69,13 @@ async function singleMovie() {
 }
 
 }
+
 async function displayMovieList(movies) {
     let output = '';
     let img = '';
-    let id = i.imdbID;
-    
+    let id = null
     movies?.map((i)=> {
+        id = i.imdbID;
 
         if (i.Poster != 'N/A') {
             img = i.Poster;
@@ -82,7 +83,6 @@ async function displayMovieList(movies) {
         else {
             img = 'img/blank-poster.webp';
         }
-    
 
         //Appending the output through string interpolition
         output += `

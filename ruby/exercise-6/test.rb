@@ -14,10 +14,6 @@ class TestBase64Encode < Test::Unit::TestCase
     end
   end
 
-  def teardown
-    # File.delete("jason.txt")
-  end
-
   def test_base64_encode
     expected_output = "Originally, John Doe was a sham name used to indicate any plaintiff in an action of ejectment (a legal action to regain property) in civil court [ “ dGhlIHN0cmluZyB0aGF0IHdpbGwgYmUgYmFzZSBlbmNvZGVk ”]. Richard Roe was the counterpart, to indicate the defendant. These fake names were used in delicate legal matters, a practice that was abolished in English law in 1852."
     actual_output = File.read("jason.txt")

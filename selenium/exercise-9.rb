@@ -8,7 +8,7 @@ driver.get "https://cosmocode.io/automation-practice-webtable/"
 
 element = driver.find_element(:tag_name, "tr")
 
-element = element.find_elements(:tag_name,"strong")
+# element = element.find_elements(:tag_name,"strong")
 
 
 element.each do |header|

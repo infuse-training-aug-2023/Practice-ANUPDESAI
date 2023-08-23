@@ -1,0 +1,253 @@
+:root {
+	--primary-color: rgb(16, 122, 160);
+	--secondary-color: rgb(63, 172, 211); /*PROPERTIES, VARIABLES,PAPRAMETERS */
+	--flowchart-color: rgb(46, 184, 211);
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 20% auto;
+}
+
+aside {
+	border-right: 1px solid rgb(205, 205, 205);
+}
+
+.um-logo {
+	padding: 16px 24px;
+	border-bottom: 1px solid rgb(205, 205, 205);
+	width: 100%;
+}
+
+.um-user img {
+	width: 40px;
+	content: url("./profilePic.jpg");
+	border-radius: 50%;
+}
+
+.test-designer {
+	width: 50%;
+	height: 200px;
+}
+
+.um-user {
+	display: flex;
+	flex-direction: row;
+	padding: 7%;
+}
+
+.um-user-name {
+	margin-left: 5%;
+	color: rgb(64, 155, 197);
+}
+.um-user-email {
+	font-size: 0.9em;
+  /* background-color: red; */
+	color: gray;
+	margin-left: 5%;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0%;
+  font-size: 77%;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  font-weight:700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav ul li {
+	display: flexbox;
+	flex-direction: row;
+	justify-items: center;
+	align-items: center;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+nav .bi {
+	font-size: 131%;
+	padding: 7%;
+}
+nav ul li:hover {
+	background-color: rgb(189, 238, 255);
+}
+.um-navitems__secondary {
+	border-top: 1.5px solid gray;
+	border-bottom: 1px solid gray;
+}
+/* test bar */
+.test {
+	min-height: 100vh;
+	border: 11px solid rgb(165, 165, 165);
+	border-right: 9px solid rgb(165, 165, 165);
+}
+.test-data > span {
+	background-color: black;
+	padding: 0.4%;
+	color: white;
+	font-size: large;
+}
+.test-data > span:nth-child(2) {
+	background-color: var(--primary-color);
+	color: white;
+	padding: 0.4%;
+	font-size: large;
+	align-items: center;
+}
+.test > .test-data {
+	background-color: var(--primary-color);
+}
+span {
+	display: inline-block;
+}
+.test-data .bi-pencil-square {
+	color: white;
+	font-size: large;
+}
+.test-data .bi-x {
+	color: white;
+	font-size: x-large;
+	font-weight: bolder;
+	float: right;
+}
+
+/* Properties  */
+.test-properties > span {
+	background-color: var(--secondary-color);
+	color: white;
+	padding: 0.2%;
+	padding-left: 0.5%;
+	display: block;
+}
+.test-properties {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.test-properties .form-properties {
+	display: flex;
+	color: var(--primary-color);
+	font-size: medium;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.test-properties .description {
+	display: flex;
+	justify-content: end;
+	width: 77%;
+}
+.description textarea {
+	background-color: lightgrey;
+	width: 60%;
+	border-radius: 2px;
+  resize:none;
+}
+.test-properties .details {
+	width: 50%;
+}
+.test-properties .details label {
+	margin: 0.5%;
+}
+.test-properties .details select {
+	color: gray;
+	border: 1px solid rgb(232, 232, 232);
+	margin-right: 4%;
+	margin-top: 2%;
+  border-color: transparent;
+  width: 10vw;
+}
+#tags {
+	color: var(--primary-color);
+}
+/* Flowchart */
+.test-main {
+	height: 71vh;
+	background-color: white;
+	display: grid;
+	grid-template-columns: 69.5% 30%;
+	grid-template-rows: 50% 50%;
+	/* border: 5px solid black; */
+	gap: 0.5%;
+}
+.test-flowchart > span {
+	color: rgb(255, 255, 255);
+	background-color: var(--flowchart-color);
+	display: flex;
+	padding: 0.2%;
+	padding-left: 0.5%;
+}
+.test-flowchart {
+	display: inline;
+	color: gray;
+	background-color: rgb(243, 241, 241);
+	border-right: 2px solid var(--flowchart-color);
+	border-bottom: 1px solid gray;
+	grid-row: 1/3;
+}
+.options {
+	padding: 0.4%;
+	background-color: white;
+}
+.options .bi-list-nested,
+.bi-play-fill,
+.bi-toggle-on,
+.bi-box-seam-fill,
+.bi-lightning,
+.bi-arrows-angle-expand,
+.bi-scissors,
+.bi-back,
+.bi-clipboard {
+	color: gray;
+	font-size: x-large;
+	margin-top: 10px;
+	padding: 0.3%;
+}
+.options .bi-trash {
+	color: gray;
+	font-size: x-large;
+	margin: 5px;
+}
+.test-properties {
+	background-color: white;
+	display: block;
+	color: rgb(64, 155, 197);
+}
+
+/* Variable and Parameters */
+.test-variables,
+.test-parameters {
+	height: 100%;
+	border-left: 2px solid var(--secondary-color);
+	border-bottom: 1px solid gray;
+	background-color: white;
+}
+.test-data .test-variables > span,
+.test-data .test-parameters > span {
+	background-color: var(--secondary-color);
+	display: flex;
+	color: white;
+	padding: 0.5%;
+}
+.test-data .bi-plus {
+	float: right;
+	color: var(--secondary-color);
+	font-size: x-large;
+	font-weight: bolder;
+}
+.table-header {
+	color: var(--secondary-color);
+	display: flex;
+	margin-top: 4%;
+	display: flex;
+	border-bottom: 1px solid grey;
+	font-size: medium;
+	padding: 0.1% 4%;
+	justify-content: start;
+	gap: 25%;
+	font-weight: bold;
+	width: 100%;
+}

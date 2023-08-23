@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>useMango&trade;</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <img
+          class="um-logo"
+          src="https://usemangolive.wpenginepowered.com/wp-content/uploads/2021/12/new-usemango-logo.png"
+          alt="useMango logo" />
+        <div class="um-user">
+          <img src="https://freesvg.org/img/abstract-user-flat-4.png" alt="profile picture" />
+          <div>
+            <!-- CHANGES ALLOWED -->
+            <span class="um-user-name">Rochelle Martins</span>
+            <span class="um-user-email">rochelle.martins@infuse.it</span>
+            <!-- ************** -->
+          </div>
+        </div>
+        <nav>
+          t
+          <ul class="um-navitems__main">
+            <li>
+              <i class="bi bi-kanban"></i>
+              <span>projects</span>
+            </li>
+            <li>
+              <i class="bi bi-stack"></i>
+              <span>data</span>
+            </li>
+            <li>
+              <i class="bi bi-box-seam"></i>
+              <span>components</span>
+            </li>
+            <li>
+              <i class="bi bi-cup-straw"></i>
+              <span>tests</span>
+            </li>
+            <li>
+              <i class="bi bi-pencil-square"></i>
+              <span>designer</span>
+            </li>
+          </ul>
+          <ul class="um-navitems__secondary">
+            <li>
+              <i class="bi bi-gear"></i>
+              <span>settings</span>
+            </li>
+            <li>
+              <i class="bi bi-trash"></i>
+              <span>recycle Bin</span>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main>
+        <div class="test">
+          <div class="test-data">
+            <span>Test</span>
+            <span class="um-test-name">Unnamed Test</span>
+            <i class="bi bi-pencil-square"></i>
+            <i class="bi bi-x"></i>
+            <div class="test-properties">
+              <span>Properties</span>
+              <form class="form-properties" action="">
+                <div class="details">
+                  <label for="status">Status</label>
+                  <select name="status" id="status">
+                    <option value="Design">Design</option>
+                  </select>
+
+                  <label for="assigned">Assigned To</label>
+                  <select name="assigned" id="assigned">
+                    <option value="Nobody">Nobody</option>
+                  </select>
+                  <br />
+                  <label for="tags">Tags</label>
+                  <i class="bi bi-plus-circle"></i>
+                  <select name="tags" id="tags">
+                    <option value="Tags">Tags To</option>
+                  </select>
+                </div>
+
+                <div class="description">
+                  <label for="description">Description:</label>
+                  <textarea style="resize: none;border-style: none; background-color: #ccc;" disabled name="" id="" cols="60" rows="7" ></textarea>
+                </div>
+              </form>
+            </div>
+
+            <div class="test-main">
+              <div class="test-flowchart">
+                <span>Flowchart</span>
+                <div class="options">
+                  <i class="bi bi-list-nested"></i>
+                  <i class="bi bi-play-fill"></i>
+                  <i class="bi bi-toggle-on"></i>
+                  <i class="bi bi-box-seam-fill"></i>
+                  <i class="bi bi-lightning"></i>
+                  <i class="bi bi-arrows-angle-expand"></i>
+                  <i class="bi bi-scissors"></i>
+                  <i class="bi bi-back"></i>
+                  <i class="bi bi-clipboard"></i>
+                  <i class="bi bi-trash"></i>
+                </div>
+                <div class="test-designer"></div>
+              </div>
+              <div class="test-data">
+                <div class="test-variables">
+                  <span>Variables</span>
+                  <i class="bi bi-plus"></i>
+                  <div class="table-header">
+                    <span>Name</span>
+                    <span>Value</span>
+                  </div>
+                </div>
+                <div class="test-parameters">
+                  <span>Parameters</span>
+                  <i class="bi bi-plus"></i>
+                  <div class="table-header">
+                    <span>Name</span>
+                    <span>Value</span>
+                    <span>Description</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

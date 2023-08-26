@@ -5,7 +5,6 @@ import sys
 
 args = sys.argv
 exec = os.environ.get('EXEC')
-exec = True
 if exec:
     arr = np.array([1, 2, 3, 4, 5,0])
     print('before manipulation')

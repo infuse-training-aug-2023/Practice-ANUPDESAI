@@ -1,6 +1,6 @@
 const axios = require('axios');
 const moment = require('moment');
-url = process.env.env_url
+const url = process.env.env_url
 
 const args = process.argv.slice(2);
 

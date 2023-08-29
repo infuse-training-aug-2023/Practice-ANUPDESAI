@@ -1,5 +1,6 @@
 const axios = require('axios');
 const moment = require('moment');
+url = process.env.env_url
 
 const args = process.argv.slice(2);
 
@@ -10,7 +11,7 @@ const format = date.format('DD/MM/YYYY');
 
 console.log(`Date: ${format}`)
 
-  axios.get('https://jsonplaceholder.typicode.com/posts/1')
+  axios.get(url)
     .then(response => {
       console.log('API Response:', response.data);
     })

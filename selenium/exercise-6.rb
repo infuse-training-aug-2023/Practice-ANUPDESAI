@@ -4,15 +4,20 @@ Selenium::WebDriver::Firefox::Service.driver_path = "C:/Users/anup.desai/Desktop
 
 driver = Selenium::WebDriver.for :firefox
 
+driver.manage.window.maximize
+
 driver.get "https://letcode.in/forms"
 
-element = driver.find_element(:css, "div:nth-child(2).columns.container > div:last-child.column.is-half > div.field > div.control > div.select")
+dropdown_xpath = driver.find_element(:xpath, '//select[starts-with(.,"AfghanistanÅland IslandsAlbaniaAlgeriaAmerican")]')
 
-element = driver.find_elements(:tag_name,"option")
+select = Selenium::WebDriver::Support::Select.new(dropdown_xpath)
 
-element.each do |option|
+options = select.options
+
+options.each do |option|
   puts option.text
 end
 
+sleep 3
 
- driver.quit
+driver.quit

@@ -7,15 +7,18 @@ driver = Selenium::WebDriver.for :firefox
 driver.get "https://testpages.herokuapp.com/styled/basic-html-form-test.html"
 
 element = driver.find_element(:name, "dropdown")
+select = Selenium::WebDriver::Support::Select.new(element)
 
+options = select.options
 i= 2
+option = options[i]
 
-element = driver.find_elements(:tag_name,"option")[i-1]
+option.click
 
+value = option.attribute("value")
 
+puts "Selected dropdown item value: #{value}"
 
-puts element.text
+sleep 3
 
-
-
- driver.quit
+driver.quit

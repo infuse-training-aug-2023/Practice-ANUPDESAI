@@ -7,17 +7,23 @@ driver = Selenium::WebDriver.for :firefox
 driver.manage.window.maximize
 
 driver.get "https://www.globalsqa.com/demo-site/sliders/#Steps"
-wait = Selenium::WebDriver::Wait.new(:timeout => 10)
 
-iframe= driver.find_element(:xpath,'//*[@id="post-2673"]/div[2]/div/div/div[3]/p/iframe')
-driver.switch_to.frame iframe;
+iframe = driver.find_element(:css, "iframe.demo-frame.lazyloaded")
 
+driver.switch_to.frame(iframe)
 
-slider = wait.until { driver.find_element(:id, "slider")}
+slider = driver.find_element(:id, "slider")
 
-driver.action.drag_and_drop_by(slider, 10, 0).perform
+span = slider.find_element(:tag_name, "span")
 
-amount = driver.find_element(:id, "amount")
-puts amount.attribute("value")
+span.send_keys :arrow_right
+
+amount = driver.find_element(:id, "amount").attribute("value")
+
+puts "Amount: #{amount}"
+
+sleep(3)
+
+driver.switch_to.default_content
 
 driver.quit

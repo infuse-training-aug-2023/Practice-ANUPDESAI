@@ -6,13 +6,11 @@ driver = Selenium::WebDriver.for :firefox
 
 driver.get "https://cosmocode.io/automation-practice-webtable/"
 
-element = driver.find_element(:tag_name, "tr")
-
-# element = element.find_elements(:tag_name,"strong")
+element = driver.find_element(:tag_name, "tr").text
 
 
-element.each do |header|
-  puts header.text
-end
+puts element
+
+
 
  driver.quit
